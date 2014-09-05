@@ -1,7 +1,7 @@
 catbox-multilevel
 =================
 
-Multilevel (LevelDB) adapter for (Catbox) [https://github.com/hapijs/catbox].
+Multilevel (LevelDB) adapter for [Catbox](https://github.com/hapijs/catbox).
 
 Check out the example server to get started... (You'll need to `npm install` first)
 
@@ -24,4 +24,4 @@ Only `utf8` keyEncodings are supported.
 
 ---
 
-Based on the (catbox-redis) [https://github.com/hapijs/catbox-redis] adapter.
+Based on the [catbox-redis](https://github.com/hapijs/catbox-redis) adapter.
