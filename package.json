@@ -1,8 +1,7 @@
 {
-  "private": true,
   "name": "catbox-multilevel",
   "description": "Multilevel adapter for catbox",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "author": "Michael Shick <me@michaelshick.com> (http://michaelshick.com)",
   "repository": "git://github.com/mshick/catbox-multilevel",
   "main": "index",
