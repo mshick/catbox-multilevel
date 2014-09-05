@@ -1,0 +1,32 @@
+{
+  "private": true,
+  "name": "catbox-multilevel",
+  "description": "Multilevel adapter for catbox",
+  "version": "0.0.0",
+  "author": "Michael Shick <me@michaelshick.com> (http://michaelshick.com)",
+  "repository": "git://github.com/mshick/catbox-multilevel",
+  "main": "index",
+  "keywords": [
+    "cache",
+    "catbox",
+    "multilevel"
+  ],
+  "engines": {
+    "node": ">=0.10.30"
+  },
+  "dependencies": {
+    "multilevel": "^6.0.1",
+    "hoek": "^2.4.1"
+  },
+  "devDependencies": {
+    "catbox": "^3.1.0",
+    "lab": "^4.3.0"
+  },
+  "scripts": {
+    "test": "make test-cov"
+  },
+  "licenses": [{
+    "type": "ISC",
+    "url": "http://github.com/mshick/catbox-multilevel/raw/master/LICENSE"
+  }]
+}
