@@ -421,7 +421,8 @@ describe('Multilevel', function () {
 
             var options = {
                 host: 'localhost',
-                port: 6380
+                port: 6789,
+                _reconnectAttempts: 1
             };
 
             var multilevel = new Multilevel(options);
@@ -472,10 +473,10 @@ describe('Multilevel', function () {
             multilevel.start(function (err) {
 
                 expect(err).to.not.exist;
-                expect(multilevel.socket).to.exist;
+                expect(multilevel.db).to.exist;
 
-                multilevel.socket.emit('error', new Error('injected'));
-                expect(multilevel.socket).to.not.exist;
+                multilevel.db.emit('error', new Error('injected'));
+                expect(multilevel.db).to.not.exist;
                 done();
             });
         });
@@ -546,7 +547,7 @@ describe('Multilevel', function () {
 
                 expect(err).to.exist;
                 expect(err).to.be.instanceOf(Error);
-                expect(err.message).to.equal('Connection not started');
+                expect(err.message).to.equal('MultilevelCache not started');
                 done();
             });
         });
@@ -746,7 +747,7 @@ describe('Multilevel', function () {
 
                 expect(err).to.exist;
                 expect(err).to.be.instanceOf(Error);
-                expect(err.message).to.equal('Connection not started');
+                expect(err.message).to.equal('MultilevelCache not started');
                 done();
             });
         });
@@ -790,7 +791,7 @@ describe('Multilevel', function () {
 
                 expect(err).to.exist;
                 expect(err).to.be.instanceOf(Error);
-                expect(err.message).to.equal('Connection not started');
+                expect(err.message).to.equal('MultilevelCache not started');
                 done();
             });
         });
