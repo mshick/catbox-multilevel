@@ -1,9 +1,18 @@
 catbox-multilevel
 =================
 
+![npm release](https://img.shields.io/npm/v/catbox-multilevel.svg?style=flat)
+
 Multilevel (LevelDB) adapter for [Catbox](https://github.com/hapijs/catbox).
 
 Check out the example server to get started... (You'll need to `npm install` first)
+
+### Features
+
+* Fast and embedded
+* Great for a simple, shared cache in a multi-process / clustered app
+* Good for tests in dependent apps, since you can spin up a multilevel instance in the node environment and it comes closer to simulating something like redis than the default memory adapter
+* Tests are passing at 100% coverage.
 
 ### Options
 
@@ -16,11 +25,8 @@ Check out the example server to get started... (You'll need to `npm install` fir
 
 ### IMPORTANT
 
-`valueEncoding` should match your server, or you will have problems.
-
-### ALSO IMPORTANT
-
-Only `utf8` keyEncodings are supported.
+* `valueEncoding` should match your server, or you will have problems.
+* Only `utf8` keyEncodings are supported.
 
 ---
 
