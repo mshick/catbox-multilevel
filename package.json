@@ -9,7 +9,7 @@
     "cache",
     "catbox",
     "multilevel",
-    "hapijs,
+    "hapijs",
     "leveldb",
     "level"
   ],
