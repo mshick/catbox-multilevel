@@ -1,8 +1,8 @@
 {
   "name": "catbox-multilevel",
   "description": "Multilevel adapter for catbox",
-  "version": "3.0.0",
-  "author": "Michael Shick <me@michaelshick.com> (http://michaelshick.com)",
+  "version": "4.0.0",
+  "author": "Michael Shick <m@shick.us> (http://michaelshick.com)",
   "repository": "git://github.com/mshick/catbox-multilevel",
   "main": "index",
   "keywords": [
@@ -14,13 +14,16 @@
     "node": ">=0.10.30"
   },
   "dependencies": {
-    "hoek": "^2.4.1",
-    "multilevel": "^6.0.1",
+    "hoek": "^2.14.0",
+    "multilevel": "^6.1.0",
     "reconnect-net": "0.0.0"
   },
   "devDependencies": {
-    "catbox": "^3.1.0",
-    "lab": "^4.3.0"
+    "catbox": "^4.3.0",
+    "code": "^1.4.1",
+    "lab": "^5.11.1",
+    "level": "^1.2.0",
+    "level-sublevel": "^6.4.6"
   },
   "scripts": {
     "test": "make test-cov"

@@ -1,0 +1,13 @@
+{
+    "env": {
+        "node": true
+    },
+    "rules": {
+        "dot-notation": 0,
+        "quotes": [1, "single"],
+        "strict": [2, "never"],
+        "semi": [1, "always"],
+        "no-underscore-dangle": 0,
+        "no-process-exit": 0
+    }
+}
