@@ -8,7 +8,10 @@
   "keywords": [
     "cache",
     "catbox",
-    "multilevel"
+    "multilevel",
+    "hapijs,
+    "leveldb",
+    "level"
   ],
   "engines": {
     "node": ">=0.10.30"
